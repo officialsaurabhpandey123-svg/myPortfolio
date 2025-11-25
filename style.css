@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    animation: fadeIn 1s ease;
+    transition: 0.4s;
+}
+body{
+    color: aliceblue;
+    background: linear-gradient(to right, rgb(160, 244, 239),rgb(2, 153, 156));
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position:fixed;
+    animation: fadeIn 1s ease;
+    z-index: 999;
+}
+#logo{
+    font-size: 2.1em;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white  ;
+}
+#logo:hover{
+    color: orangered;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    cursor: pointer;
+}
+#link{
+    display: flex;
+    gap: 52px;
+    padding-top: 12px;
+}
+.links{
+   
+    list-style-type: none;
+   font-size:   17px;
+   
+}
+.links a{
+    text-decoration: none;
+    color: rgb(10, 238, 101);
+   font-size: 18px;
+   transition: 0.3s;
+   position: relative;
+}
+.links a:hover{
+    color: orangered;
+    border-bottom: 2px solid white;
+   
+}
+.toggle{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+#home{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 20px;
+    background:linear-gradient(to right,red,black);
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 40px;
+    animation: slideUp 1.2s ease;
+   
+}
+
+#home h1{
+    font-size: 3.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#home h1:hover{
+    color: aqua;
+}
+#home h1 span{
+   color: rgb(10, 238, 101);
+    
+}
+#home h1 span:hover{
+    color: rgb(254, 254, 254);
+}
+#changing-text {
+    height: 28px;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white; 
+  width: fit-content;
+}
+
+
+#contacticoncontainer{
+    position: relative;
+    top: 10px;
+}
+.contacticon{
+    text-decoration: none;
+    color: rgb(222, 205, 205);
+    font-size: 2.7rem;
+    margin-right: 8px;
+   
+}
+.contacticon:hover{
+    text-decoration: none;
+    color: rgb(133, 130, 236);
+    font-size: 2.8rem;
+    margin-right: 8px;
+   
+}
+
+
+
+#image{
+    height:320px;
+    width:320px;
+    border-radius: 50%;
+    background-image: url("logo.png");
+    background-size:cover;
+    object-fit: fill;
+    background-position:right;
+    overflow: hidden;
+    
+    color: rgb(4, 161, 64);
+    box-shadow: 4px 8px black;
+    transition: 0.4s;
+}
+#image:hover{
+    border: 4px double green;
+}
+
+/*skils------------------------------------------------------------------------*/
+
+#skill{
+    height: fit-content;
+    padding: 30px;
+    width: 100%;
+    background:linear-gradient(to bottom,rgb(129, 229, 244),rgb(5, 77, 122));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 75px;
+    text-align: center;
+ }
+
+#skills{
+   background:linear-gradient(to bottom,rgb(129, 229, 244),rgb(5, 77, 122));
+    padding-top: 20px;
+}
+
+#skills h1{
+   text-align: center;
+   font-weight: 700;
+    color: black;
+}
+
+
+#card{
+    height: 40vh;
+    width: 30vh;
+    box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.436);
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(49, 0, 209, 0.057);
+}
+
+#card i{
+background-position: center;
+  font-size: 8rem;
+  color:black;
+  text-align: center;
+}
+
+#card:hover{
+   background-color: white;
+   animation: fadeIn 1s ease;
+}
+#card i:hover{
+   font-size: 10rem;
+}
+
+
+/*skils finish*/
+
+/*project----------------------------------------------------------------------------*/
+
+#project{
+    height: fit-content;
+    width: 100%;
+    background-color: aqua;
+    padding: 20px 20px 40px 40px;
+   
+   
+}
+
+.projects{
+    padding: 20px;
+    height: 43vh;
+    width: 95%;
+    background-color: rgb(199, 83, 44);
+    box-shadow: 2px 3px 3px 2px black;
+    border-radius: 30px;
+    margin:20px  auto;
+
+}
+.projects:hover{
+   height: 41vh;
+   width: 95%;
+   background-color: rgba(7, 183, 30, 0.74);
+   color: black;
+    color: aliceblue;
+    animation: fadeIn 1s ease;
+    box-sizing: border-box;
+}
+#projecttitle{
+    color: black;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 700;
+}
+.projectstitle{
+    text-align: center;
+    margin: 14px;
+    text-decoration:underline;
+    font-size: 1.9em;
+    color: black;
+}
+.projectstitlepara{
+    text-align: center;
+    margin-top:10px;
+ 
+    font-size: 1.2rem;
+    color:rgb(205, 229, 239);
+}
+.projects ul li{
+    
+    margin-top:8px;
+ 
+    font-size: 1rem;
+    color:rgb(205, 229, 239);
+}
+/*project end-------------------------*/
+
+#contact{
+     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+form{
+   box-shadow:2px 4px 2px 4px black;
+    
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    
+}
+form h1{
+    color: black;
+    text-align: center;
+}
+.input{
+    height: 10vh;
+    width: 80%;
+    margin-top: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.9;
+    border: 4px double rgb(21, 212, 81);
+}
+#comment{
+    height: 15vh;
+    width: 80%;
+    margin-top: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 4px double rgb(21, 212, 81);
+
+}
+#send{
+    height:10vh;
+    width: 60%;
+    border-radius: 22px;
+    margin-top: 22px;
+    background-color: rgb(28, 220, 108);
+    font-size: 2rem;
+}
+#send:hover{
+    background-color: orangered;
+     height:10vh;
+    width: 63%;
+}
+#bottomicon{
+    text-align: center;
+    margin: 20px;
+    
+}
+#bottomicon div a{
+    color: black;
+    
+}
+#footer{
+    margin-top: 20px;
+    height: 4vh;
+    width: 100%;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 1rem;
+    text-align: center;
+}
+@media (max-width:950px) {
+      #link{
+    gap:20px;
+
+    
+  }
+    #image{
+        display: none;
+    }
+    
+  #home{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 20px;
+    background-image:url("logo.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 40px;
+    animation: slideUp 1.2s ease;
+}
+#home div h1{
+    font-size: 4.7rem;
+  }
+  #home div p{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 650px) {
+  #link{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left:70%;
+    width: 30%;
+    background: #00000041;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+
+  }
+  #link.show{
+    display: flex;
+  }
+  .toggle{
+    display:block;
+
+  }
+  #home div h1{
+    font-size: 4.2rem;
+  }
+  .projects{
+    
+    height: 60vh;
+    width: 95%;
+ 
+
+}
+.projects:hover{
+   height: 59vh;
+   width: 95%;
+   background-color: rgb(40, 4, 130);
+    color: aliceblue;
+    animation: fadeIn 1s ease;
+    box-sizing: border-box;
+}
+#comment{
+    height: 15vh;
+    width: 80%;
+    margin-top: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 4px double rgb(21, 212, 81);
+}
+
+}
+
+
+
+@media (max-width: 402px){
+
+#skills{
+   background:linear-gradient(to bottom,rgb(129, 229, 244),rgb(5, 77, 122));
+    padding-top: 10px;
+}
+
+
+
+#card{
+    height: 30vh;
+    width: 60vh;
+}
+
+/*project------------------------------------------------*/
+
+
+.projects{
+    
+    height: 57vh;
+    width: 95%;
+ 
+
+}
+.projects:hover{
+   height: 56vh;
+   width: 95%;
+   background-color: rgba(57, 35, 183, 0.74);
+    color: aliceblue;
+    animation: fadeIn 1s ease;
+    box-sizing: border-box;
+}
+#projecttitle{
+    color: black;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 700;
+}
+.projectstitle{
+    text-align: center;
+    margin: 14px;
+    text-decoration:underline;
+    font-size: 1.9em;
+    color: black;
+}
+.projectstitlepara{
+    text-align: center;
+    margin-top:10px;
+ 
+    font-size: 1.2rem;
+    color:rgb(205, 229, 239);
+}
+.projects ul li{
+    
+    margin-top:8px;
+ 
+    font-size: 1rem;
+    color:rgb(205, 229, 239);
+}
+#contact{
+     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+form{
+   box-shadow:2px 4px 2px 4px black;
+    
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    
+}
+
+.input{
+    height: 8vh;
+    width: 80%;
+    margin-top: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 4px double rgb(21, 212, 81);
+}
+#send{
+    height:7vh;
+    width: 60%;
+   
+    font-size: 2rem;
+    font-weight: 800;
+}
+#comment{
+    height: 15vh;
+    width: 80%;
+    margin-top: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 4px double rgb(21, 212, 81);
+}
+#send:hover{
+    background-color: orangered;
+     height:7vh;
+    
+}
+}
+
+
+
+
+    
